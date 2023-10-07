@@ -1,0 +1,32 @@
+
+- Solicitar o peso e a altura do cliente
+
+- Validar os dados fornecidos
+
+    - Caso os dados sejam inválidos, solicitar novamente
+
+- Guardar os valores fornecidos pelo cliente
+
+- Aplicar os dados na fórmula, realizando o cálculo
+
+- Armazenar resultado
+
+- Se imc for menor que 18,5
+    - Armazenar situação abaixo do peso
+
+- Senão, se imc for menor que 25
+    - Armazenar situação peso ideal
+
+- Senão, se imc for menor que 30
+    - Armazenar situação pré-obesidadel
+
+- Senão, se imc for menor que 35
+    - Armazenar situação Obesidade grau 1
+
+- Senão, se imc for menor que 40
+    - Armazenar situação Obesidade grau 2
+
+- Senão
+    - Armazenar situação Obesidade grau 3
+
+- Exibir resultado (IMC e situação)
