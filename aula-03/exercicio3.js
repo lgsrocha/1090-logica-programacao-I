@@ -5,8 +5,10 @@
 
 const resultadoSorteio = []
 for (let i = 0; i<6 ;i++){
+    const novaBola = Math.ceil(Math.random() * 60)
     let rodada = ["Primeira","Segunda","Terceira","Quarta","Quinta","Final"] 
-    resultadoSorteio.push(Math.ceil(Math.random() * 60))
 
+    resultadoSorteio.indexOf(novaBola) === -1? resultadoSorteio.push(novaBola) : i-- //condição para não repetir números
+        
     console.log(`RODADA: ${rodada[i]} ${resultadoSorteio}`)
 }
