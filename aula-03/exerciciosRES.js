@@ -62,8 +62,10 @@ Para gerar um número aleatório, pode-se utilizar o método random(), da biblio
 
 const resultadoSorteio = []
 for (let i = 0; i<6 ;i++){
-let rodada = ["Primeira","Segunda","Terceira","Quarta","Quinta","Final"] 
-resultadoSorteio.push(Math.ceil(Math.random() * 60))
+    const novaBola = Math.ceil(Math.random() * 60)
+    let rodada = ["Primeira","Segunda","Terceira","Quarta","Quinta","Final"] 
 
-console.log(`RODADA: ${rodada[i]} ${resultadoSorteio}`)
+    resultadoSorteio.indexOf(novaBola) === -1? resultadoSorteio.push(novaBola) : i-- //condição para não repetir números
+        
+    console.log(`RODADA: ${rodada[i]} ${resultadoSorteio}`)
 }
