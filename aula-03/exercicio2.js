@@ -16,3 +16,15 @@ const listaDeAlunos = [
   { nome: "Rafael", notas: [6, 5] },
   { nome: "Juliana", notas: [10, 9] },
 ];
+
+// código feio
+// for(let i = 0; i < listaDeAlunos.length; i++){
+//   console.log(listaDeAlunos[i].nome + " " + ((listaDeAlunos[i].notas[0]+listaDeAlunos[i].notas[1])/2))
+// }
+
+for(const {nome, notas} of listaDeAlunos){
+  let media = (notas[0]+notas[1])/2;
+  let merito = media >= 8 ? "⭐" : "";
+  console.log(`NOME: ${nome}, MÉDIA: ${media} ${merito}`)
+}
+
