@@ -25,3 +25,13 @@ Dentre as funcionalidades, espera-se que seja possível:
 ## Observações
 
 Não haverá a persistência das tarefas em banco de dados. Para isso, podem utilizar um array para armazenar a lista das tarefas cadastradas.
+
+## Equipes
+
+-1 - Wagner - Gabriel G - Pedrinho - Bill
+-2 - Kalinka - Gabriel H - Alvaro - Everton
+-3 - Pablo - Gabriel F - Aryelson - Bart
+-4 - Rudson - Wesley - Edjalma -PedrinhoLázaro
+-5 - Danilo - João Vitor - Priscila -Pietra
+-6 - Silvio - Mariano - Lucas - Enei
+-7 - Alan - Samir - Daniella - Lucas Rocha
