@@ -28,10 +28,16 @@ Não haverá a persistência das tarefas em banco de dados. Para isso, podem uti
 
 ## Equipes
 
--1 - Wagner - Gabriel G - Pedrinho - Bill
--2 - Kalinka - Gabriel H - Alvaro - Everton
--3 - Pablo - Gabriel F - Aryelson - Bart
--4 - Rudson - Wesley - Edjalma -PedrinhoLázaro
--5 - Danilo - João Vitor - Priscila -Pietra
--6 - Silvio - Mariano - Lucas - Enei
--7 - Alan - Samir - Daniella - Lucas Rocha
+- 1 - Wagner - Gabriel G - Pedrinho - Bill
+
+- 2 - Kalinka - Gabriel H - Alvaro - Everton
+
+- 3 - Pablo - Gabriel F - Aryelson - Bart
+
+- 4 - Rudson - Wesley - Edjalma -PedrinhoLázaro
+
+- 5 - Danilo - João Vitor - Priscila -Pietra
+
+- 6 - Silvio - Mariano - Enei
+
+- 7 - Alan - Samir - Daniella - Lucas Gabriel
