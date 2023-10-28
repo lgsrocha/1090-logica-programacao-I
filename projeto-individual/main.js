@@ -4,7 +4,8 @@
  */
 
 //imports
-const {listaClientes, listaVeiculos, diaEnvio, preparaEmail} = require('./clientes');
+const {listaClientes, listaVeiculos, diaEnvio, emailsMarketing, body} = require('./clientes');
+const enviarEmail = require('./envia-email')
 const prompt = require("prompt-sync")();
 
 //dia padrão agendado para envio dos emails
@@ -65,7 +66,8 @@ const escolha = prompt(``)
 
         case "4":
             let assunto = prompt("Digite o assunto para os emails dessa semana.")
-            preparaEmail(assunto)
+            emailsMarketing.map((a)=>(enviarEmail(a.nome,assunto,body)))
+                      
             
             break;
             
