@@ -24,7 +24,6 @@ let listaClientes =[
     {nome: "Priscila", email: "priscila@mail.com", aceitaMarketing: true, ultimaVisita: "10/10/2023"}
 ]
 let listaVeiculos = [
-    [
         {modelo: "Onix", marca: "Chevrolet", basico: 65000, completo: 76000, ano: "2022/01", vendidos: 5000},
         {modelo: "HB20", marca: "Hyundai", basico: 72000, completo: 82000, ano: "2021/01", vendidos: 4530},
         {modelo: "Corolla", marca: "Toyota", basico: 120000, completo: 140000, ano: "2022/01", vendidos: 2000},
@@ -45,7 +44,6 @@ let listaVeiculos = [
         {marca: "Ford", modelo: "Mustang Mach-E", ano: "2023/01", basico: 600000, completo: 600000, vendidos: 101},
         {marca: "Volkswagen", modelo: "Saveiro", ano: "2023/01", basico: 63950, completo: 101390, vendidos: 3045},
         {marca: "Volkswagen", modelo: "Tarok", ano: "2023/01", basico: 254000, completo: 260000, vendidos: 200}
-    ]
 ];
 
 //Recebe uma data no formato dd/MM/yyyy 
@@ -68,8 +66,8 @@ const emailsMarketing = listaClientes.filter((obj)=>(obj.aceitaMarketing === tru
 
 //nova lista com os 3 lançamentos mais recentes
 // const lancamentos = listaVeiculos.filter((obj)=>(obj.ano))
-const sortedObjects = listaVeiculos.sort((a, b) => b.ano - a.ano);
-console.log(sortedObjects)
+const sortedObjects = listaVeiculos[0].sort((a, b) => new Date(b.ano + '/01') - new Date(a.ano + '/01'));
+console.log(sortedObjects);
 // const mostRecentObjects = sortedObjects.slice(0, 3);
 //nova lista com os mais vendidos do último ano
 
